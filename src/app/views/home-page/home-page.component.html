@@ -1,0 +1,21 @@
+<div class="container">
+  <div style="height: 100vh; display: flex; justify-content: center; align-items: center;">
+    <p-toast></p-toast>
+
+    <p-confirmPopup> </p-confirmPopup>
+
+    <button
+      (click)="confirm($event, 'chart')"
+      pButton
+      icon="pi pi-chart-bar"
+      label="Chart"
+      class="me-3"
+    ></button>
+    <button
+      (click)="confirm($event, 'table')"
+      pButton
+      icon="pi pi-list"
+      label="Table"
+    ></button>
+  </div>
+</div>

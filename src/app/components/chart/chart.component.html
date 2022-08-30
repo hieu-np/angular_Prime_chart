@@ -1,0 +1,72 @@
+<div style="display: flex; justify-content: space-between">
+  <button
+    pButton
+    type="button"
+    class="btn btn-primary btn-ripple mb-2"
+    routerLink="/application/table"
+  >
+    <i class="pi pi-angle-left ps-1 pt-1"></i>
+  </button>
+  <button
+    pButton
+    type="button"
+    class="btn btn-primary btn-ripple mb-2"
+    routerLink="/home"
+  >
+    <i class="pi pi-home ps-1 pt-1"></i>
+  </button>
+
+  <button
+    pButton
+    type="button"
+    class="btn btn-primary btn-ripple mb-2"
+    routerLink="/application/table"
+  >
+    <i class="pi pi-angle-right ps-2 pt-1"></i>
+  </button>
+</div>
+<p-chart type="bar" [data]="data" [options]="chartOptions"></p-chart>
+<div class="d-flex">
+  <button
+    type="button"
+    class="btn btn-primary btn-ripple mt-3 me-3"
+    (click)="updateData()"
+  >
+    Generate Random Data
+  </button>
+  <button
+    type="button"
+    class="btn btn-success btn-ripple mt-3 me-3"
+    (click)="addTenData()"
+  >
+    Add 10 Data
+  </button>
+  <button
+    type="button"
+    class="btn btn-success btn-ripple mt-3 me-3"
+    (click)="adDataSheetBar()"
+  >
+    Add Data Sheet Bar
+  </button>
+  <button
+    type="button"
+    class="btn btn-success btn-ripple mt-3 me-3"
+    (click)="adDataSheetLine()"
+  >
+    Add Data Sheet Line
+  </button>
+  <button
+    type="button"
+    class="btn btn-warning btn-ripple mt-3 me-3"
+    (click)="deleteTenData()"
+  >
+    Delete 10 Data
+  </button>
+  <button
+    type="button"
+    class="btn btn-danger btn-ripple mt-3"
+    (click)="resetData()"
+  >
+    Reset Data
+  </button>
+</div>
